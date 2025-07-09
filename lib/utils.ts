@@ -54,8 +54,8 @@ export const configureAssistant = (voice: string, style: string) => {
         },
       ],
     },
-    clientMessages: [] as CreateAssistantDTO["clientMessages"],
-    serverMessages: [] as CreateAssistantDTO["serverMessages"],
+    clientMessages: [] as unknown as NonNullable<CreateAssistantDTO["clientMessages"]>,
+    serverMessages: [] as unknown as NonNullable<CreateAssistantDTO["serverMessages"]>,
   };
   return vapiAssistant;
 };
