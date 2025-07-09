@@ -8,9 +8,11 @@ interface CompanionCardProps {
     subject: string;
     duration: number;
     color: string; 
+    redirectToNewPageOnClick?: boolean;
 }
 
-const CompanionCard = ({id, name, topic, subject, duration, color} : CompanionCardProps) => {
+const CompanionCard = ({id, name, topic, subject, duration, color, redirectToNewPageOnClick = false} : CompanionCardProps) => {
+    const targetHref = redirectToNewPageOnClick ? '/companions/new' : `/companions/${id}`;
   return (
     <article className="companion-card" style={{backgroundColor: color}}>
         <div className="flex justify-between items-center">
@@ -28,7 +30,7 @@ const CompanionCard = ({id, name, topic, subject, duration, color} : CompanionCa
             <p className="text-sm">{duration} minutes</p>
         </div>
 
-        <Link href={`/companions/${id}`} className="w-full">
+        <Link href={targetHref} className="w-full">
             <button className="btn-primary w-full justify-center">
                 Launch Lesson    
             </button>        

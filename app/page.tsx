@@ -12,14 +12,16 @@ const Page = async () => {
   const user = await currentUser();
   const recentSessionCompanions = await getRecentSessions(10);
 
+   const usingPopularCompanionsDummy = companions.length === 0;
    const displayedPopularCompanions =
-    companions.length > 0 ? companions : recentSessions.slice(0, 3);
+    usingPopularCompanionsDummy ? recentSessions.slice(0, 3) : companions;
 
+  const usingRecentSessionsDummy = recentSessionCompanions.length === 0;
   const displayedRecentSessions =
-    recentSessionCompanions.length > 0
-      ? recentSessionCompanions
-      : recentSessions;
+    usingRecentSessionsDummy ? recentSessions : recentSessionCompanions;
   
+  const redirectToNewPageOnClick = usingPopularCompanionsDummy || usingRecentSessionsDummy;
+
   return (
     <main>
       <h1>
@@ -28,10 +30,12 @@ const Page = async () => {
 
       <section className='home-section'>
         {displayedPopularCompanions.map((companion) => (
+          
           <CompanionCard 
             key={companion.id}
             {...companion}
             color={getSubjectColor(companion.subject)}
+            redirectToNewPageOnClick={redirectToNewPageOnClick}
           />
         ))}
 
