@@ -32,16 +32,23 @@
 ```bash
 git clone https://github.com/kreamtea/Converso.git
 cd Converso
+```
 
 ### 2.Install Dependencies
+```bash
 npm install
+```
 
 ### 3. Set environment variables
+```bash
 CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
 CLERK_SECRET_KEY=your_clerk_secret_key
 SUPABASE_URL=your_supabase_url
 SUPABASE_ANON_KEY=your_supabase_anon_key
 VAPI_API_KEY=your_vapi_api_key
+```
 
 ### 4. Run App Locally
+```bash
 npm run dev
+```
