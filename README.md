@@ -1,6 +1,6 @@
-# 🗣️ Converso – Real-Time AI Transcription Chat App
+# 🗣️ Converso – Create Your Own Real-Time AI Learning Companions
 
-Converso is a full-stack AI-powered web app that transcribes voice to text in real-time and displays it in a clean, chat-like UI. Ideal for meetings, interviews, or casual voice notes, Converso makes spoken communication searchable and shareable.
+**Converso** is an AI-powered platform where you can create personalized AI learning companions to explore and understand topics across different subjects. Speak naturally, learn interactively, and deepen your knowledge with companions tailored to your learning goals.
 
 ---
 
