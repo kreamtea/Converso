@@ -25,6 +25,14 @@
 
 ---
 
+## 🔗 Try It Live
+
+👉 [https://converso-ai.vercel.app](https://converso-ai.vercel.app)
+
+No setup required — just log in and start chatting with your AI companion!
+
+---
+
 ## 📦 Getting Started
 
 ### 1. Clone the Repo
