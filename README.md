@@ -27,7 +27,7 @@
 
 ## 🔗 Try It Live
 
-👉 [https://converso-ai.vercel.app](https://converso-ai.vercel.app)
+👉 [https://converso-ai.vercel.app](https://converso-qcm4d0iba-kreamteas-projects.vercel.app/)
 
 No setup required — just log in and start chatting with your AI companion!
 
